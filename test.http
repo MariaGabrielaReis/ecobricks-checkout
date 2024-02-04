@@ -14,13 +14,23 @@ Content-Type: application/json
 
 ###
 
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "maby",
+  "password": "maby"
+}
+
+###
+
 GET http://localhost:3000/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNjUzODgxMywiZXhwIjoxNzA2NTM4ODczfQ.j-U_nLkkvPogoO8BIbmnvGfRXhLtQmss8oxTIIOzT7M
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoibWFieSIsImlhdCI6MTcwNzA1MDczOCwiZXhwIjoxNzA3MDUwNzk4fQ.oNTcE7cQ2RoNQ1r7EeZaMHM1cJRnRwamBLqZUWdnO0I
 
 ###
 
 GET http://localhost:3000/orders/d02944c6-c45b-46f3-b020-26c7ae0eb1ca
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiY2hyaXMiLCJpYXQiOjE3MDY1Mzg4NDQsImV4cCI6MTcwNjUzODkwNH0.NZTjG30_FTpdEiaqQxrhIKgcZljEnreiQrZxt8W52Ig
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoibWFieSIsImlhdCI6MTcwNzA1MDczOCwiZXhwIjoxNzA3MDUwNzk4fQ.oNTcE7cQ2RoNQ1r7EeZaMHM1cJRnRwamBLqZUWdnO0I
 
 ###
 
