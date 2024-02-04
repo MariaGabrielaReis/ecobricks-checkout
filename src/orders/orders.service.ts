@@ -47,10 +47,10 @@ export class OrdersService {
   }
 
   findAll() {
-    return `This action returns all orders`;
+    return this.orderRepo.find();
   }
 
   findOne(id: string) {
-    return `This action returns a #${id} order`;
+    return this.orderRepo.findOne({ where: { id } });
   }
 }
